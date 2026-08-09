@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="lang.js"></script>
 </head>
 <body>
 
@@ -17,14 +18,15 @@
   <div class="nav-links">
     <a href="index.html#producto" class="hide-mobile">Producto</a>
     <a href="precios.html">Precios</a>
-    <a href="mailto:hola@markplanapp.com" class="btn btn-ghost">Contactar</a>
+    <a href="mailto:markplanapp@gmail.com" class="btn btn-ghost">Contactar</a>
+    <a href="#" class="lang-switch mono" onclick="localStorage.setItem('mp_lang','en'); window.location.href='pricing.html'; return false;">EN</a>
   </div>
 </nav>
 
 <header class="hero pricing-hero">
   <div class="eyebrow">Precios</div>
   <h1>Un plan. Sin letra chica escondida.</h1>
-  <p class="lede">Pagás por empresa, no por persona. Invitá a todo tu equipo que necesite ver el avance sin costo extra.</p>
+  <p class="lede">Paga por empresa, no por persona. Invita a todo tu equipo que necesite ver el avance sin costo extra.</p>
 </header>
 
 <section class="section" style="padding-top: 0;">
@@ -67,13 +69,13 @@
     <h3>Cómo activar tu cuenta</h3>
     <p style="color: rgba(238,242,245,0.7); font-size: 0.9rem; margin-top: -8px; margin-bottom: 18px;">Todavía no tenemos cobro automático dentro de la app — la activación se hace de forma directa con nosotros, en 3 pasos:</p>
     <ol>
-      <li>Descargá MarkPlan y creá tu cuenta (gratis, sin tarjeta).</li>
-      <li>Hacé la transferencia por Zelle al contacto de abajo, indicando el email con el que te registraste.</li>
+      <li>Descarga MarkPlan y crea tu cuenta (gratis, sin tarjeta).</li>
+      <li>Realiza la transferencia por Zelle al contacto de abajo, indicando el email con el que te registraste.</li>
       <li>Activamos tu plan en menos de 24 horas y te avisamos por email.</li>
     </ol>
     <div class="zelle-box">
-      Zelle: <span class="placeholder" style="background: rgba(225,96,44,0.18); color: #ffb088; padding: 1px 6px; border-radius: 2px;">[completar email/teléfono de Zelle]</span><br>
-      Consultas: hola@markplanapp.com
+      Zelle: javiercuellar@gmail.com<br>
+      Consultas: markplanapp@gmail.com
     </div>
   </div>
 
@@ -89,7 +91,7 @@
       <a href="precios.html">Precios</a>
       <a href="privacidad.html">Privacidad</a>
       <a href="terminos.html">Términos</a>
-      <a href="mailto:hola@markplanapp.com">Contacto</a>
+      <a href="mailto:markplanapp@gmail.com">Contacto</a>
     </div>
   </div>
   <div class="footer-bottom">© <span id="year"></span> MarkPlan. markplanapp.com</div>
