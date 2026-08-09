@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MarkPlan — Documentación de campo para contratistas</title>
+<link rel="icon" type="image/png" href="img/icon.png">
+<meta name="description" content="Marcá el plano, sacá la foto, quedó documentado. MarkPlan es la app de medición y documentación de campo para contratistas, con modo offline real y colaboración en equipo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="wordmark"><img src="img/icon.png" alt="" class="nav-icon">Mark<span class="tick">Plan</span></a>
+  <div class="nav-links">
+    <a href="index.html#producto" class="hide-mobile">Producto</a>
+    <a href="precios.html">Precios</a>
+    <a href="mailto:hola@markplanapp.com" class="btn btn-ghost">Contactar</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="eyebrow">Documentación de campo</div>
+  <h1>Marcá el plano.<br>Sacá la foto.<br>Quedó documentado.</h1>
+  <p class="lede">MarkPlan convierte cualquier plano en un registro vivo del trabajo: mediciones, fotos y el estado real de cada instalación, ubicados exactamente donde corresponden — sin señal, sin drama.</p>
+  <div class="cta-row">
+    <a href="precios.html" class="btn btn-accent">Ver precios</a>
+    <a href="mailto:hola@markplanapp.com" class="btn btn-ghost">Pedir una demo</a>
+  </div>
+
+  <div class="tagline mono">Marca. Anota. Controla. Avanza.</div>
+
+  <div class="dim-line">
+    <span class="label mono">100% offline</span>
+    <span class="rule"></span>
+    <span class="label mono">equipo con roles</span>
+    <span class="rule"></span>
+    <span class="label mono">historial completo</span>
+  </div>
+</header>
+
+<section class="section" id="producto">
+  <div class="section-head">
+    <div class="eyebrow">Cómo funciona en la obra</div>
+    <h2>Construido para el que trabaja con las manos, no con el teclado.</h2>
+  </div>
+
+  <div class="grid-3">
+    <div class="card">
+      <div class="kicker mono">01 — En el lugar</div>
+      <h3>Funciona sin señal, siempre</h3>
+      <p>Sótanos, cajas de ascensor, zonas rurales — MarkPlan mide, marca y guarda todo localmente. Nada depende de tener wifi en ese momento.</p>
+    </div>
+    <div class="card">
+      <div class="kicker mono">02 — En equipo</div>
+      <h3>Cada persona, su rol</h3>
+      <p>Invitá a tu equipo con permisos claros: quién edita, quién solo mira, quién puede corregir el trabajo de otro. El visualizador nunca cuesta un asiento.</p>
+    </div>
+    <div class="card">
+      <div class="kicker mono">03 — Con el tiempo</div>
+      <h3>Un historial que no se pierde</h3>
+      <p>Cada foto y cada cambio de estado queda con fecha, hora y autor. Cuando el cliente llama seis meses después, la respuesta ya está ahí.</p>
+    </div>
+  </div>
+</section>
+
+<section class="credibility">
+  <div class="credibility-inner">
+    <div class="eyebrow">Por qué existe MarkPlan</div>
+    <p>"La construí porque la necesitaba yo mismo, para documentar instalaciones eléctricas reales en obra. Hoy la uso todos los días — y se la ofrezco a cualquier contratista que se canse de perder fotos en el rollo del celular."</p>
+  </div>
+</section>
+
+<section class="pricing-teaser">
+  <div class="eyebrow mono" style="color: var(--accent-deep); font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase;">Precio simple</div>
+  <div class="price-figure">$30<span class="unit">/mes</span></div>
+  <p style="color: var(--ink-soft); max-width: 42ch; margin: 0 auto;">Hasta 4 lugares incluidos. $5/mes por cada lugar adicional. El rol Visualizador es siempre gratis.</p>
+  <div style="margin-top: 30px;">
+    <a href="precios.html" class="btn btn-outline-dark">Ver el detalle completo →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="wordmark" style="margin-bottom: 10px;"><img src="img/icon.png" alt="" class="nav-icon">Mark<span class="tick">Plan</span></div>
+      <div>Documentación de campo para contratistas.</div>
+    </div>
+    <div class="footer-links">
+      <a href="precios.html">Precios</a>
+      <a href="privacidad.html">Privacidad</a>
+      <a href="terminos.html">Términos</a>
+      <a href="mailto:hola@markplanapp.com">Contacto</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© <span id="year"></span> MarkPlan. markplanapp.com</div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

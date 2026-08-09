@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Precios — MarkPlan</title>
+<link rel="icon" type="image/png" href="img/icon.png">
+<meta name="description" content="Un solo plan simple: $30/mes hasta 4 lugares, $5 por lugar adicional. El rol Visualizador siempre es gratis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="wordmark"><img src="img/icon.png" alt="" class="nav-icon">Mark<span class="tick">Plan</span></a>
+  <div class="nav-links">
+    <a href="index.html#producto" class="hide-mobile">Producto</a>
+    <a href="precios.html">Precios</a>
+    <a href="mailto:hola@markplanapp.com" class="btn btn-ghost">Contactar</a>
+  </div>
+</nav>
+
+<header class="hero pricing-hero">
+  <div class="eyebrow">Precios</div>
+  <h1>Un plan. Sin letra chica escondida.</h1>
+  <p class="lede">Pagás por empresa, no por persona. Invitá a todo tu equipo que necesite ver el avance sin costo extra.</p>
+</header>
+
+<section class="section" style="padding-top: 0;">
+
+  <div class="plan-card">
+    <div class="plan-head">
+      <div class="kicker mono">Plan MarkPlan</div>
+      <div class="price-figure" style="text-align: left; margin: 8px 0 0;">$30<span class="unit">/mes</span></div>
+    </div>
+    <div class="plan-body">
+      <div class="plan-row">
+        <span>Lugares incluidos (Editor / Supervisor)</span>
+        <span class="val">4</span>
+      </div>
+      <div class="plan-row">
+        <span>Lugar adicional</span>
+        <span class="val">+$5/mes c/u</span>
+      </div>
+      <div class="plan-row">
+        <span>Rol Visualizador (solo lectura)</span>
+        <span class="val">Gratis, sin límite</span>
+      </div>
+      <div class="plan-row">
+        <span>Proyectos activos</span>
+        <span class="val">Ilimitados</span>
+      </div>
+      <div class="plan-row">
+        <span>Uso 100% offline (sin colaboración)</span>
+        <span class="val">Siempre gratis</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="dim-line on-paper" style="max-width: 640px; margin: 60px auto 0;">
+    <span class="label mono">cómo se activa hoy</span>
+    <span class="rule"></span>
+  </div>
+
+  <div class="how-to-buy">
+    <h3>Cómo activar tu cuenta</h3>
+    <p style="color: rgba(238,242,245,0.7); font-size: 0.9rem; margin-top: -8px; margin-bottom: 18px;">Todavía no tenemos cobro automático dentro de la app — la activación se hace de forma directa con nosotros, en 3 pasos:</p>
+    <ol>
+      <li>Descargá MarkPlan y creá tu cuenta (gratis, sin tarjeta).</li>
+      <li>Hacé la transferencia por Zelle al contacto de abajo, indicando el email con el que te registraste.</li>
+      <li>Activamos tu plan en menos de 24 horas y te avisamos por email.</li>
+    </ol>
+    <div class="zelle-box">
+      Zelle: <span class="placeholder" style="background: rgba(225,96,44,0.18); color: #ffb088; padding: 1px 6px; border-radius: 2px;">[completar email/teléfono de Zelle]</span><br>
+      Consultas: hola@markplanapp.com
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="wordmark" style="margin-bottom: 10px;"><img src="img/icon.png" alt="" class="nav-icon">Mark<span class="tick">Plan</span></div>
+      <div>Documentación de campo para contratistas.</div>
+    </div>
+    <div class="footer-links">
+      <a href="precios.html">Precios</a>
+      <a href="privacidad.html">Privacidad</a>
+      <a href="terminos.html">Términos</a>
+      <a href="mailto:hola@markplanapp.com">Contacto</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© <span id="year"></span> MarkPlan. markplanapp.com</div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
