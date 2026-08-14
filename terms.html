@@ -14,12 +14,15 @@
 
 <nav class="nav">
   <a href="home.html" class="wordmark"><img src="img/icon.png" alt="" class="nav-icon"><span class="wm-text">Mark<span class="tick">Plan</span></span></a>
-  <div class="nav-links">
-    <a href="home.html#product" class="hide-mobile">Product</a>
+  <div class="nav-links" id="navLinks">
+    <a href="home.html#product">Product</a>
     <a href="pricing.html">Pricing</a>
     <a href="mailto:markplanapp@gmail.com" class="btn btn-ghost">Contact</a>
     <a href="#" class="lang-switch mono" onclick="localStorage.setItem('mp_lang','es'); window.location.href='terminos.html'; return false;">ES</a>
   </div>
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <div class="legal-shell">
@@ -133,5 +136,7 @@
   <div class="footer-bottom">© <span id="year"></span> MarkPlan. markplanapp.com</div>
 </footer>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="nav-menu.js"></script>
+<script src="motion.js"></script>
 </body>
 </html>

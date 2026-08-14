@@ -15,21 +15,52 @@
 
 <nav class="nav">
   <a href="home.html" class="wordmark"><img src="img/icon.png" alt="" class="nav-icon"><span class="wm-text">Mark<span class="tick">Plan</span></span></a>
-  <div class="nav-links">
-    <a href="home.html#product" class="hide-mobile">Product</a>
+  <div class="nav-links" id="navLinks">
+    <a href="home.html#product">Product</a>
     <a href="pricing.html">Pricing</a>
     <a href="mailto:markplanapp@gmail.com" class="btn btn-ghost">Contact</a>
     <a href="#" class="lang-switch mono" onclick="localStorage.setItem('mp_lang','es'); window.location.href='index.html'; return false;">ES</a>
   </div>
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <header class="hero">
-  <div class="eyebrow">Field documentation</div>
-  <h1>Mark the plan.<br>Take the photo.<br>It's documented.</h1>
-  <p class="lede">MarkPlan turns any blueprint into a living record of the work: measurements, photos, and the real status of every installation, located exactly where they belong — no signal, no drama.</p>
-  <div class="cta-row">
-    <a href="pricing.html" class="btn btn-accent">See pricing</a>
-    <a href="mailto:markplanapp@gmail.com" class="btn btn-ghost">Request a demo</a>
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow">Field documentation</div>
+      <h1>Mark the plan.<br>Take the photo.<br>It's documented.</h1>
+      <p class="lede">MarkPlan turns any blueprint into a living record of the work: measurements, photos, and the real status of every installation, located exactly where they belong — no signal, no drama.</p>
+      <div class="cta-row">
+        <a href="pricing.html" class="btn btn-accent">See pricing</a>
+        <a href="mailto:markplanapp@gmail.com" class="btn btn-ghost">Request a demo</a>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <svg class="plan-svg" viewBox="0 0 400 400">
+        <path class="plan-line" d="M 60 80 L 60 320 L 260 320 L 260 220 L 340 220 L 340 80 Z" />
+        <path class="plan-line" d="M 60 200 L 140 200 L 140 320" style="animation-delay: 0.5s;" />
+        <path class="plan-line" d="M 260 220 L 200 220 L 200 320" style="animation-delay: 0.7s;" />
+        <g class="pin" transform="translate(230, 150)">
+          <circle class="pin-ring" cx="0" cy="0" r="10" fill="none" stroke="#e8a60d" stroke-width="2" />
+          <circle cx="0" cy="0" r="9" fill="#e8a60d" />
+          <circle cx="0" cy="0" r="3.5" fill="#0e1b22" />
+        </g>
+        <g class="photo-card" transform="translate(250, 95)">
+          <rect x="0" y="0" width="108" height="76" rx="4" fill="#f4f1ea" />
+          <rect x="8" y="8" width="92" height="46" rx="2" fill="#0e1b22" />
+          <path d="M 8 46 L 34 26 L 52 40 L 68 20 L 100 46 Z" fill="#3a4d57" />
+          <circle cx="82" cy="20" r="5" fill="#e8a60d" />
+          <text class="timestamp" x="8" y="68">2:32 PM · Today</text>
+        </g>
+        <g class="category-chip" transform="translate(250, 178)">
+          <rect x="0" y="0" width="70" height="22" rx="11" fill="#e8a60d" />
+          <text x="12" y="15">Outlet</text>
+        </g>
+      </svg>
+    </div>
   </div>
 
   <div class="tagline mono">Mark. Note. Track. Move forward.</div>
@@ -50,17 +81,17 @@
   </div>
 
   <div class="grid-3">
-    <div class="card">
+    <div class="card reveal">
       <div class="kicker mono">01 — On site</div>
       <h3>Works with no signal, always</h3>
       <p>Basements, elevator shafts, rural areas — MarkPlan measures, marks, and saves everything locally. Nothing depends on having wifi at that moment.</p>
     </div>
-    <div class="card">
+    <div class="card reveal">
       <div class="kicker mono">02 — As a team</div>
       <h3>Every person, their role</h3>
       <p>Invite your team with clear permissions: who edits, who only views, who can fix someone else's work. The Viewer role never costs a seat.</p>
     </div>
-    <div class="card">
+    <div class="card reveal">
       <div class="kicker mono">03 — Over time</div>
       <h3>A history that doesn't disappear</h3>
       <p>Every photo and status change is stamped with date, time, and author. When the client calls six months later, the answer is already there.</p>
@@ -103,5 +134,7 @@
 </footer>
 
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="nav-menu.js"></script>
+<script src="motion.js"></script>
 </body>
 </html>
