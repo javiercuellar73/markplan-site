@@ -359,6 +359,31 @@ img, svg { display: block; max-width: 100%; }
 }
 .price-figure .unit { font-size: 0.4em; color: var(--ink-soft); }
 
+.price-regular {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+  text-decoration: line-through;
+  text-decoration-color: var(--accent-deep);
+}
+.price-launch-tag {
+  display: inline-block;
+  margin-top: 8px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  background: #fdeee6;
+  padding: 3px 9px;
+  border-radius: var(--radius);
+}
+.price-note {
+  margin-top: 14px;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
 /* ---------- Footer ---------- */
 
 footer {
@@ -541,7 +566,8 @@ footer a:hover { color: #fff; }
 @media (max-width: 760px) {
   .grid-3 { grid-template-columns: 1fr; }
   .nav-links { gap: 16px; }
-  .nav-links span.hide-mobile { display: none; }
+  .nav-links a.hide-mobile { display: none; }
+  .nav-links { flex-wrap: nowrap; }
   .plan-card .plan-head, .plan-card .plan-body, .how-to-buy { padding-left: 24px; padding-right: 24px; }
 }
 
