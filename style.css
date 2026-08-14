@@ -734,13 +734,25 @@ footer a:hover { color: #fff; }
     z-index: 30;
   }
   .nav-links.open { display: flex; }
-  .nav-links a {
-    padding: 14px 4px;
+  .nav-links a,
+  .nav-links a.btn,
+  .nav-links a.lang-switch {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
     border-bottom: 1px solid var(--blueprint-line-soft);
+    border-radius: 0;
+    padding: 14px 4px;
+    margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--cream-text);
     opacity: 1;
   }
   .nav-links a:last-child { border-bottom: none; }
-  .nav-links .btn { margin-top: 6px; justify-content: center; }
   .menu-toggle { display: block; }
   .plan-card .plan-head, .plan-card .plan-body, .how-to-buy { padding-left: 24px; padding-right: 24px; }
 }
